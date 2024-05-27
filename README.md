@@ -66,3 +66,8 @@ scores, so tuning was performed manually.
 The final accuracy scores were 89.02% for Logistic Regression with a gain of 1.24, 90.82% for Decision Tree with a gain of 8.53, and 94.21% for Random Forest with a gain of 5.02. 
 The confusion matrix revealed that the Logistic Regression model's lack of substantial progress was due to the model rarely predicting **yes**. ADASYN helped combat this problem 
 in the other two models.
+
+## Future Improvements
+With more time, I would like to regularize the data in hopes to improve the Grid Search tool for better hyperparameter tuning optimization. Grid Search did not result in higher performance due to overfitting, and regularization would have combatted this problem and reduce the need for manually tuning hyperparameters.
+
+I would also like to explore Feature Creation but combining multiple features to reduce dimensionality. Both the Decision Tree and Logistic Regression models performed better when multiple features were omitted – I would like to see if combining some of those features would have would have been more beneficial than leaving them out entirely. For example, creating _economic status_ by combining _education_, _balance_ and _age_ could have provided some insight from features which were largely left out of the models.
